@@ -1,0 +1,18 @@
+[SheetConfig]
+    name        = "Sheet1"
+    name_col    = "A"
+    phone_col   = "C"
+    code_col    = "B"
+    start_row   = 1
+
+[Command]
+    number = 4
+
+[[Seqs]]
+    seq = "tab"
+[[Seqs]]
+    seq = "tab tab"
+[[Seqs]]
+    seq = "tab tab tab tab tab enter"
+[[Seqs]]
+    seq = "tab enter"
