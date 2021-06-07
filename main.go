@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"time"
 
 	"github.com/ShiryaevAnton/ses/config"
@@ -10,13 +11,19 @@ import (
 
 func main() {
 
-	conf, err := config.GetConfig("config.toml")
+	var configPath string
+	var excelPath string
+
+	flag.StringVar(&configPath, "cp", "config.toml", "Path to config file")
+	flag.StringVar(&excelPath, "ep", "test.xlsx", "Path to excel file")
+
+	conf, err := config.GetConfig(configPath)
 	if err != nil {
 		panic(err)
 	}
 
 	r := excel.NewReader(
-		"test.xlsx",
+		excelPath,
 		conf.SheetConfig.Name,
 		conf.SheetConfig.StartRow,
 		conf.SheetConfig.NameCol,
