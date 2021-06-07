@@ -15,7 +15,9 @@ func main() {
 	var excelPath string
 
 	flag.StringVar(&configPath, "cp", "config.toml", "Path to config file")
-	flag.StringVar(&excelPath, "ep", "test.xlsx", "Path to excel file")
+	flag.StringVar(&excelPath, "ep", "", "Path to excel file")
+
+	flag.Parse()
 
 	conf, err := config.GetConfig(configPath)
 	if err != nil {

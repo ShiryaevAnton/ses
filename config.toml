@@ -1,8 +1,8 @@
 [SheetConfig]
     name        = "Sheet1"
-    name_col    = "A"
+    name_col    = "B"
     phone_col   = "C"
-    code_col    = "B"
+    code_col    = "A"
     start_row   = 1
 
 [Command]
