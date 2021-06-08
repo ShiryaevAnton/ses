@@ -1,18 +1,13 @@
 [SheetConfig]
     name        = "Sheet1"
-    name_col    = "B"
-    phone_col   = "C"
+    name_col    = "C"
+    phone_col   = "B"
     code_col    = "A"
     start_row   = 1
-
-[Command]
-    number = 4
 
 [[Seqs]]
     seq = "tab"
 [[Seqs]]
     seq = "tab tab"
 [[Seqs]]
-    seq = "tab tab tab tab tab enter"
-[[Seqs]]
-    seq = "tab enter"
+    seq = "tab tab tab tab tab enter tab enter"

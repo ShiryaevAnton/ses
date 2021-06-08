@@ -58,7 +58,5 @@ func PrintToSes(c *control.Control, config *config.Config, users []excel.User) {
 		c.TypeString(user.Phone)
 		c.Press(config.Seqs[2].Seq)
 
-		c.Press(config.Seqs[3].Seq)
-
 	}
 }

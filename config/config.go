@@ -18,14 +18,9 @@ type KeySequence struct {
 	Seq string `toml:"seq"`
 }
 
-type Command struct {
-	Number int `toml:"number"`
-}
-
 type Config struct {
 	SheetConfig SheetConfig
 	Seqs        []KeySequence
-	Command     Command
 }
 
 func GetConfig(path string) (*Config, error) {
